@@ -1,0 +1,1274 @@
+/* Global CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Header CSS */
+.header{
+    background: url(../images/banner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.header .navbar-nav{}
+
+.header .navbar-nav .nav-item{   
+    padding: 8px 12px;
+    position: relative;
+    margin: 0 3px;
+}
+
+.header .navbar-nav .nav-item .nav-link{
+    color: #fff;
+}
+
+.header .navbar-nav .nav-item .nav-link::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: #fb414e;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    transition: 0.3s all;
+}
+
+.header .navbar-nav .nav-item.active .nav-link::after{
+    width: 100%;
+}
+
+.header .navbar-nav .nav-item:hover .nav-link::after{
+    width: 100%;
+}
+
+/* Hero Area CSS */
+.header .hero-box{
+    text-align: center;
+    color: #fff;
+    margin: 134px 0;
+}
+
+.header .hero-box h1{
+    margin-bottom: 30px;
+    font-size: 56px;
+    padding: 0 10%;
+}
+
+.header .hero-box p{
+    line-height: 1.7;
+    margin-bottom: 40px;
+    padding: 0px 18%;
+}
+
+.header .hero-box .btn{
+    color: #fff;
+    border: 1px solid #ef2756;
+    border-radius: 0px;
+    padding: 8px 0px;
+    margin: 0 10px;
+    width: 18%;
+}
+
+.header .hero-box .btn.btn-cta{
+    background: #ef2756;
+}
+
+.header .hero-box .btn.btn-second{
+    transition: 0.4s linear;
+}
+
+.header .hero-box .btn:focus{
+    outline: 0;
+    box-shadow: none;
+}
+
+.header .hero-box .btn.btn-second:hover{
+    background: #ef2756;
+}
+
+/*Service Section CSS*/
+.service{}
+
+.service .card-deck{}
+
+.service .card-deck .card{
+    background: #202b30;
+    color: #fff;
+    border-radius: 0;
+    margin-top: -65px;
+    margin-bottom: 100px;
+    transition: 0.4s all;
+}
+
+.service .card-deck .card .card-body{
+    padding: 40px;
+}
+
+.service .card-deck .card .card-body img{
+    margin-bottom: 24px;
+}
+
+.service .card-deck .card .card-body h5{
+    margin-bottom: 20px;
+}
+
+.service .card-deck .card .card-body .white-line{
+    height: 2px;
+    background: #fff;
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.service .card-deck .card .card-body p{
+    line-height: 1.7;
+}
+
+.service .card-deck .card:hover{
+    background-color: #fb414e;
+    cursor: pointer;
+}
+
+.service .service-text{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.service .service-text .service-text-box{}
+
+.service .service-text .service-text-box h5{
+    color: #fb414e;
+}
+
+.service .service-text .service-text-box span{
+    color: #fb414e;
+}
+
+.service .service-text .service-text-box h2{
+    margin-bottom: 30px;
+}
+
+.service .service-text .service-text-box p{
+    line-height: 1.7;
+    padding: 0 18%;
+    margin-bottom: 0px;
+    color: #838383;
+}
+
+.service .service-icon{
+    text-align: center;
+}
+
+.service .service-icon .icon-box{
+margin-bottom: 30px;
+}
+
+.service .service-icon .icon-box img{
+    margin-bottom: 16px;
+}
+
+.service .service-icon .icon-box h4{
+    margin-bottom: 26px;
+    color: #1f1f1f;
+}
+
+.service .service-icon .icon-box p{
+    line-height: 1.7;
+    color: #838383;
+    margin-bottom: 0px;
+}
+
+/*Business Plan CSS*/
+.business-plan{
+    margin: 70px 0 0px 0;
+    background: #202b30;
+    padding: 70px 0;
+    color: #fff;
+}
+
+.business-plan .text-box{
+    margin: 20px 18% 0 0;
+}
+
+.business-plan .text-box h2{
+    font-size: 38px;
+    margin-bottom: 32px;
+}
+
+.business-plan .text-box p{
+    line-height: 1.7;
+}
+
+.business-plan .text-box .btn{
+    border-radius: 0;
+    padding: 8px 60px;
+    margin-top: 30px;
+}
+
+.business-plan .text-box .start-now{
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.business-plan .img-box{}
+
+.business-plan .img-box img{}
+
+/*Quality Css*/
+.quality{
+    background: #eaeaea;
+    padding: 100px 0 60px 0;
+}
+
+.quality .text-box{
+    margin-bottom: 40px;
+}
+
+.quality .text-box h5{
+    color: #1f1f1f;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.quality .text-box p{
+    line-height: 1.7;
+    margin-bottom: 0px;
+    color: #838383;
+}
+
+.quality .big-text-box{}
+
+.quality .big-text-box h3{
+    color: #1f1f1f;
+    margin-bottom: 24px;
+    font-size: 38px;
+}
+
+.quality .big-text-box p{
+    line-height: 1.7;
+    color: #838383;
+    margin-bottom: 0px;
+}
+
+.quality .big-text-box p.first{
+    margin-bottom: 50px;
+}
+
+/*Carousel Section CSS*/
+.carousel{
+    position: static;
+    margin: 100px 0 95px 0;
+}
+
+.carousel .nav{
+    margin-bottom: 30px;
+}
+
+.carousel .nav .nav-item{
+    position: relative;
+    margin: 0 5px;
+}
+
+.carousel .nav .nav-item .nav-link{
+    color: #a4a4a4;
+}
+
+.carousel .nav .nav-item .nav-link:hover{
+    color: #1f1f1f;
+}
+
+.carousel .nav .nav-item .nav-link:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: #000;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    transition: 0.4s all;
+}
+
+.carousel .nav .nav-item:hover .nav-link:after{
+    width: 100%;
+}
+
+.carousel .gallery{
+    padding: 14px;
+}
+
+.carousel .gallery .img-box{
+    margin: 5px;
+    overflow: hidden;
+}
+
+.carousel .gallery .img-box:hover img{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.carousel .gallery .img-box img{
+    transition: 0.4s all;
+    width: 100%;
+}
+
+/* Trust Section CSS */
+.trust{
+    margin-bottom: 100px;
+}
+.trust .text-box{}
+
+.trust .text-box h3{
+    color: #1f1f1f;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 34px;
+}
+
+.trust .text-box p{
+    line-height: 1.7;
+    padding-right: 16%;
+    margin-bottom: 40px;
+    color: #1f1f1f;
+}
+
+.trust .text-box .btn{}
+
+.trust .text-box .learn-more{
+    border: 1px solid #1f1f1f;
+    border-radius: 0;
+    padding: 8px 50px;
+}
+
+.trust .img-box{
+    margin-top: 15px;
+}
+
+.trust .img-box img{}
+
+/*Client Section CSS*/
+.client{
+    background: #202b30;
+    padding: 100px 0 20px 0;
+}
+
+.client .img-box{
+    margin-bottom: 80px;
+}
+
+.client .img-box.one{
+    margin-top: 24px;
+}
+
+.client .img-box img{}
+
+.client .text-box{
+    color: #fff;
+    text-align: right;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+.client .text-box h3{
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.client .text-box p{
+    line-height: 1.7;
+    margin-bottom: 0;
+    margin-left: 5%;
+}
+
+/*Design Section Css*/
+.design{
+    padding: 100px 0;
+    background: url(../images/design-section.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.design .text-box{
+    padding-right: 20%;
+    margin-bottom: 30px;
+}
+
+.design .text-box h3{
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.design .text-box p{
+    line-height: 1.7;
+    color: #838383;
+}
+
+.design .img-box{}
+
+.design .img-box img{
+    margin-bottom: 20px;
+}
+
+.design .img-box h5{
+    margin-bottom: 30px;
+    color: #5e5e5e;
+}
+
+.design .img-box p{
+    color: #838383;
+    margin-bottom: 0;
+}
+
+/*Contact Section Css*/
+.contact{
+    margin: 100px 0;
+}
+
+.contact .text-box{
+    text-align: right;
+    margin-right: 8%;
+}
+
+.contact .text-box h2{
+    font-weight: bold;
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+.contact .text-box p{
+    line-height: 1.7;
+    color: #838383;
+}
+
+.contact .text-box p.first{}
+
+.contact .form-box{}
+
+.contact .form-box .form-row{}
+
+.contact .form-box .form-group{}
+
+.contact .form-box .form-group .form-control{
+    border-radius: 0;
+    color: #000 !important;
+    border: 1px solid #000;
+}
+
+.contact .form-box .form-group .form-control:focus{
+    box-shadow: none;
+    outline: 0;
+}
+
+.contact .form-box .btn{
+    background: #fb414e;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+.contact .form-box .btn .btn-submit{}
+
+.contact input::placeholder{
+    color: #000 !important;
+}
+
+/*Footer Section CSS*/
+.footer{
+    padding: 60px 0;
+    background: #202b30;
+}
+
+.footer .text-box{}
+
+.footer .text-box img{
+    margin-bottom: 50px;
+}
+
+.footer .text-box h5{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer .text-box p{
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.footer .text-box .icon-box{
+    margin-top: 50px;
+}
+.footer .text-box .icon-box .nav{}
+.footer .text-box .icon-box .nav .nav-item{}
+.footer .text-box .icon-box .nav .nav-item .nav-link{
+    color: #fff;
+    background: #fb414e;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.footer .menu-box{}
+
+.footer .menu-box .nav{
+    
+}
+
+.footer .menu-box .nav .nav-item{
+    padding: 8px 16px;
+}
+
+.footer .menu-box .nav .nav-item:last-child{
+    padding-right: 0 !important;
+}
+
+.footer .menu-box .nav .nav-item .nav-link{
+    color:#fff;
+    padding:0;
+    transition: 0.4s all;
+}
+
+.footer .menu-box .nav .nav-item .nav-link.first{
+    border-bottom: 2px solid #ef2756;
+}
+
+.footer .menu-box .nav .nav-item .nav-link:hover{
+    border-bottom: 2px solid #ef2756;
+}
+
+.footer .search-box{}
+
+.footer .search-box h5{
+    color: #fff;
+    text-align: right;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.footer .search-box .input-group{
+    padding-left: 12%;
+}
+
+.footer .search-box .input-group .form-control{
+    border-radius: 0;
+}
+
+.footer .search-box .input-group .form-control:focus{
+    box-shadow: none;
+    outline: 0;
+    border: none;
+}
+
+.footer input::placeholder{
+    color: #848484 !important;
+}
+
+.footer .search-box .input-group .input-group-append{}
+
+.footer .search-box .input-group .input-group-append .btn{
+    border-radius: 0;
+    background: #fb414e;
+    color: #fff;
+    border: 1px solid #fb414e;
+    padding: 6px 50px;
+}
+
+.footer .search-box p{
+    color: #586165;
+    text-align: right;
+    margin-top: 56px;
+    margin-bottom: 0px;
+}
+
+/*RESPONSIVE CSS*/
+@media (min-width: 0px) and (max-width: 575px){
+    /*Navbar Responsive*/
+    .header .navbar-nav .nav-item {
+        padding: 8px 0px;
+    }
+
+    .header .navbar-nav .nav-item.active .nav-link::after{
+        width: 50%;
+    }
+
+    .header .navbar-nav .nav-item:hover .nav-link::after{
+        width: 50%;
+    }
+
+    /*Hero Area Responsive*/
+    .header .hero-box {
+        margin: 60px 0;
+    }
+
+    .header .hero-box h1 {
+        font-size: 26px;
+        padding: 0;
+    }
+
+        .header .hero-box p {
+        line-height: 1.4;
+        padding: 0;
+    }
+
+    .header .hero-box .btn {
+        width: 46%;
+    }
+
+    .header .hero-box .btn.btn-second {
+        margin-top: 20px;
+    }
+
+    /*Service Section Responsive*/
+    .service .card-deck .card {
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+
+    .service .service-text .service-text-box {
+        margin-top: 50px;
+    }
+
+    .service .service-text .service-text-box p {
+        padding: 0;
+    }
+
+    .service .service-text {
+        margin-bottom: 70px;
+    }
+
+    /*Business Plan Responsive*/
+    .business-plan {
+        margin: 40px 0 0px 0;
+    }
+
+    .business-plan .text-box h2 {
+        font-size: 27px;
+    }
+
+    .business-plan .text-box {
+        margin: 20px 0 40px 0;
+        text-align: center;
+    }
+    
+    .business-plan .img-box img {
+        margin: 0 auto;
+        display: block;
+        margin-top: 20px;
+    }
+
+    /*Quality Section Responsive*/
+    .quality {
+        padding: 60px 0 60px 0;
+    }
+
+    .quality .text-box {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .quality .text-box h5 {
+        margin-bottom: 12px;
+    }
+
+    .quality .big-text-box {
+        text-align: center;
+    }
+
+    .quality .big-text-box h3 {
+        font-size: 26px;
+        margin-top: 26px;
+    }
+
+    /*Carosuel Section Responsive*/
+    .carousel {
+        margin: 60px 0 65px 0;
+    }
+
+    .carousel .nav {
+        margin-bottom: 10px;
+    }
+
+    /*Trust Section Responsive*/
+    .trust {
+        margin-bottom: 60px;
+    }
+
+    .trust .text-box {
+        text-align: center;
+    }
+
+    .trust .text-box p {
+        padding-right: 0;
+    }
+
+    .trust .text-box .learn-more {
+        margin-bottom: 40px;
+    }
+
+    /*Client Section Responsive*/
+    .client {
+        padding: 60px 0 60px 0;
+    }
+
+    .client .img-box {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .client .text-box {
+        margin: 0;
+        text-align: center;
+    }
+
+    .client .text-box p {
+        margin: 0;
+    }
+
+    .client .img-box.one {
+        margin-top: 0;
+    }
+
+    /*Design Section Responsive*/
+    .design {
+        padding: 60px 0 30px 0;
+        text-align: center;
+    }
+
+    .design .text-box {
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .design .text-box h3 {
+        font-size: 32px;
+    }
+
+    .design .img-box h5 {
+        margin-bottom: 24px;
+    }
+
+    .design .img-box p {
+        margin-bottom: 30px;
+    }
+
+    /*Contact Section Responsive*/
+    .contact {
+        margin: 60px 0;
+    }
+
+    .contact .text-box {
+        text-align: center;
+        margin: 0 0 50px 0;
+    }
+
+    .contact .text-box h2 {
+        font-size: 31px;
+    }
+
+    /*Footer Section Responsive*/
+    .footer .text-box {
+        text-align: center;
+    }
+
+    .footer .text-box img {
+        margin-bottom: 40px;
+    }
+
+    .footer .text-box .icon-box {
+        margin: 40px 0 50px 0;
+    }
+
+    footer .text-box p {
+        margin-bottom: 18px;
+    }
+
+    .footer .menu-box .nav .nav-item:last-child{
+        padding-right: 16px !important;
+    }
+
+    .footer .search-box h5 {
+        text-align: center;
+    }
+
+    .footer .search-box .input-group {
+        padding-left: 0;
+    }
+
+    .footer .search-box .input-group .input-group-append .btn {
+        padding: 6px 12px;
+    }
+
+    .footer .search-box p {
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    /*Navbar Responsive*/
+    .header .navbar-nav .nav-item {
+        padding: 8px 0px;
+    }
+
+    .header .navbar-nav .nav-item.active .nav-link::after{
+        width: 50%;
+    }
+
+    .header .navbar-nav .nav-item:hover .nav-link::after{
+        width: 50%;
+    }
+
+    /*Hero Area Responsive*/
+    .header .hero-box {
+        margin: 60px 0;
+    }
+
+    .header .hero-box h1 {
+        font-size: 26px;
+        padding: 0;
+    }
+
+    .header .hero-box p {
+        line-height: 1.4;
+        padding: 0;
+    }
+
+    .header .hero-box .btn {
+        width: 45%;
+    }
+
+    .header .hero-box .btn.btn-second {
+        margin-top: 0px;
+    }
+
+    /*Service Section Responsive*/
+    .service .card-deck .card {
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+
+    .service .service-text .service-text-box {
+        margin-top: 50px;
+    }
+
+    .service .service-text .service-text-box p {
+        padding: 0;
+    }
+
+    .service .service-text {
+        margin-bottom: 70px;
+    }
+
+    /*Business Plan Responsive*/
+    .business-plan {
+        margin: 40px 0 0px 0;
+    }
+
+    .business-plan .text-box h2 {
+        font-size: 27px;
+    }
+
+    .business-plan .text-box {
+        margin: 20px 0 40px 0;
+        text-align: center;
+    }
+    
+    .business-plan .img-box img {
+        margin: 0 auto;
+        display: block;
+        margin-top: 20px;
+    }
+
+    /*Quality Section Responsive*/
+    .quality {
+        padding: 60px 0 60px 0;
+    }
+
+    .quality .text-box {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .quality .text-box h5 {
+        margin-bottom: 12px;
+    }
+
+    .quality .big-text-box {
+        text-align: center;
+    }
+
+    .quality .big-text-box h3 {
+        font-size: 26px;
+        margin-top: 26px;
+    }
+
+    /*Carosuel Section Responsive*/
+    .carousel {
+        margin: 60px 0 65px 0;
+    }
+
+    .carousel .nav {
+        margin-bottom: 10px;
+    }
+
+    /*Trust Section Responsive*/
+    .trust {
+        margin-bottom: 60px;
+    }
+
+    .trust .text-box {
+        text-align: center;
+    }
+
+    .trust .text-box p {
+        padding-right: 0;
+    }
+
+    .trust .text-box .learn-more {
+        margin-bottom: 40px;
+    }
+
+    /*Client Section Responsive*/
+    .client {
+        padding: 60px 0 60px 0;
+    }
+
+    .client .img-box {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .client .text-box {
+        margin: 0;
+        text-align: center;
+    }
+
+    .client .text-box p {
+        margin: 0;
+    }
+
+    .client .img-box.one {
+        margin-top: 24px;
+    }
+
+    /*Design Section Responsive*/
+    .design {
+        padding: 60px 0 30px 0;
+        text-align: center;
+    }
+
+    .design .text-box {
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .design .text-box h3 {
+        font-size: 32px;
+    }
+
+    .design .img-box h5 {
+        margin-bottom: 24px;
+    }
+
+    .design .img-box p {
+        margin-bottom: 30px;
+    }
+
+    /*Contact Section Responsive*/
+    .contact {
+        margin: 60px 0;
+    }
+
+    .contact .text-box {
+        text-align: center;
+        margin: 0 0 50px 0;
+    }
+
+    .contact .text-box h2 {
+        font-size: 31px;
+    }
+
+    /*Footer Section Responsive*/
+    .footer .text-box {
+        text-align: center;
+    }
+
+    .footer .text-box img {
+        margin-bottom: 40px;
+    }
+
+    .footer .text-box .icon-box {
+        margin: 40px 0 50px 0;
+    }
+
+    footer .text-box p {
+        margin-bottom: 18px;
+    }
+
+    .footer .menu-box .nav .nav-item:last-child{
+        padding-right: 16px !important;
+    }
+
+    .footer .search-box h5 {
+        text-align: center;
+    }
+
+    .footer .search-box .input-group {
+        padding-left: 0;
+    }
+
+    .footer .search-box .input-group .input-group-append .btn {
+        padding: 6px 35px;
+    }
+
+    .footer .search-box p {
+        text-align: center;
+        margin-top: 40px;
+    }    
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    /*Navbar Responsive*/
+    .header .navbar-nav .nav-item {
+        padding: 8px 0px;
+    }
+
+    .header .navbar-nav .nav-item.active .nav-link::after{
+        width: 50%;
+    }
+
+    .header .navbar-nav .nav-item:hover .nav-link::after{
+        width: 50%;
+    }
+
+    /*Hero Area Responsive*/
+    .header .hero-box {
+        margin: 100px 0;
+    }
+
+    .header .hero-box h1 {
+        font-size: 42px;
+        padding: 0;
+    }
+
+    .header .hero-box p {
+        line-height: 1.4;
+        padding:0 9%;
+    }
+
+    .header .hero-box .btn {
+        width: 25%;
+    }
+
+    .header .hero-box .btn.btn-second {
+        margin-top: 0px;
+    }
+
+    /*Service Section Responsive*/
+    .service .card-deck .card {
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+
+    .service .service-text .service-text-box {
+        margin-top: 50px;
+    }
+
+    .service .service-text .service-text-box p {
+        padding: 0;
+    }
+
+    .service .service-text {
+        margin-bottom: 70px;
+    }
+
+    /*Business Plan Responsive*/
+    .business-plan {
+        margin: 40px 0 0px 0;
+    }
+
+    .business-plan .text-box h2 {
+        font-size: 27px;
+    }
+
+    .business-plan .text-box {
+        margin: 20px 0 40px 0;
+        text-align: center;
+    }
+    
+    .business-plan .img-box img {
+        margin: 0 auto;
+        display: block;
+        margin-top: 20px;
+    }
+
+    /*Quality Section Responsive*/
+    .quality {
+        padding: 60px 0 60px 0;
+    }
+
+    .quality .text-box {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .quality .text-box h5 {
+        margin-bottom: 12px;
+    }
+
+    .quality .big-text-box {
+        text-align: center;
+    }
+
+    .quality .big-text-box h3 {
+        font-size: 26px;
+        margin-top: 26px;
+    }
+
+    /*Carosuel Section Responsive*/
+    .carousel {
+        margin: 60px 0 65px 0;
+    }
+
+    .carousel .nav {
+        margin-bottom: 10px;
+    }
+
+    /*Trust Section Responsive*/
+    .trust {
+        margin-bottom: 60px;
+    }
+
+    .trust .text-box {
+        text-align: center;
+    }
+
+    .trust .img-box img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .trust .text-box p {
+        padding-right: 0;
+    }
+
+    .trust .text-box .learn-more {
+        margin-bottom: 40px;
+    }
+
+    /*Client Section Responsive*/
+    .client {
+        padding: 60px 0 60px 0;
+    }
+
+    .client .img-box {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .client .text-box {
+        margin: 0;
+        text-align: center;
+    }
+
+    .client .text-box p {
+        margin: 0;
+    }
+
+    .client .img-box.one {
+        margin-top: 24px;
+    }
+
+    /*Design Section Responsive*/
+    .design {
+        padding: 60px 0 30px 0;
+        text-align: center;
+    }
+
+    .design .text-box {
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .design .text-box h3 {
+        font-size: 32px;
+    }
+
+    .design .img-box h5 {
+        margin-bottom: 24px;
+    }
+
+    .design .img-box p {
+        margin-bottom: 30px;
+    }
+
+    /*Contact Section Responsive*/
+    .contact {
+        margin: 60px 0;
+    }
+
+    .contact .text-box {
+        text-align: center;
+        margin: 0 0 50px 0;
+    }
+
+    .contact .text-box h2 {
+        font-size: 31px;
+    }
+
+    /*Footer Section Responsive*/
+    .footer .search-box .input-group .input-group-append .btn {
+        padding: 6px 12px;
+    }
+
+    .footer .menu-box .nav .nav-item:last-child{
+        padding-right: 16px !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    /*Hero Area Responsive*/
+    .header .hero-box h1 {
+        padding: 0;
+    }
+
+    /*Service Section Responsive*/
+    .service .card-deck .card .card-body {
+        padding: 18px;
+    }
+
+    /*Business Plan Responsive*/
+    .business-plan .text-box {
+        margin: 0;
+    }
+
+    /*Trust Section Responsive*/
+    .trust .text-box p {
+        padding-right: 0;
+    }
+
+    .trust .img-box {
+        margin-top: 36px;
+    }
+
+    /*Client Section Responsive*/
+    .client .text-box {
+        margin-top: 10px;
+    }
+
+    /*Design Section Responsive*/
+    .design .text-box {
+        padding-right: 0;
+    }
+
+    /*Footer Section Responsive*/
+    .footer .menu-box .nav .nav-item:last-child{
+        padding-right: 16px !important;
+    }
+}
